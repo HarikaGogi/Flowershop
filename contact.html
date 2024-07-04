@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flowers</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="js/bootstrap.bundle.min.js">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/remixicon/remixicon.css">
+</head>
+<body>
+  <header class="container-fluid p-0">
+    <nav
+      class="navbar navbar-expand-sm navbar-light bg-light"
+    >
+      <div class="container">
+        <a class="navbar-brand w-25" href="index.html"><img class="w-50" src="images/logo/logo.png" alt=""></a>
+        <button
+          class="navbar-toggler d-lg-none justify-content-end"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-toggles2"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-around" id="collapsibleNavId">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link " href="index.html" aria-current="page"
+                >Home
+                <span class="visually-hidden">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="categories.html">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="allproducts.html">All Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+            </ul>
+            <ul class="navbar-nav  mt-2 mt-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="bi bi-search"></i>
+                </a>
+            </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="cart.html">
+                      <i class="bi bi-cart4"></i>
+                  </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="account.html">
+                    <i class="bi bi-person-circle"></i>
+                </a>
+            </li>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="map-container-fluid">
+    <h4>Reach Us</h4>
+      <div class="map-container d-flex p-2 m-1">
+        <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122103.70344881937!2d81.80635805!3d16.9872987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37a3f2440c9fff%3A0x86b24503e305ca21!2sRajamahendravaram%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1713987849460!5m2!1sen!2sin"  frameborder="0" allowfullscreen></iframe>
+      </div>
+  </section>
+  <Section class="contact-container p-3 m-2">
+    <div class="row p-5">
+        <div class="col-12 col-lg-4">
+            <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Opp.Easy Buy 
+                    <br>Complex Road 
+                    <br>Rajamahendravaram
+                </p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>flowerfly@gmail.com </p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+919912779159</p>
+
+              </div>
+        </div>
+        <div class="col-12 col-lg-8">
+            <h2>Contact Us</h2>
+              
+            <form onsubmit="return validateForm()">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name">
+                        <span class="error-message" id="nameError"></span><br><br>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email">
+                        <span class="error-message" id="emailError"></span><br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <label for="phoneNumber">Mobile Number:</label><br>
+                        <input type="text" id="phoneNumber" name="phoneNumber">
+                        <span class="error-message" id="phoneNumberError"></span><br><br>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <label for="subject">Subject:</label><br>
+                        <input type="text" id="subject" name="subject">
+                        <span class="error-message" id="subjectError"></span><br><br>
+                    </div>
+                </div>            
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="6" cols="100"></textarea>
+                <span class="error-message" id="messageError"></span><br><br>
+                        
+              <button type="submit" >Send Message</button>
+            </form>   
+         </div>
+
+         <script>
+            function validateForm() {
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var phoneNumber = document.getElementById("phoneNumber").value;
+                var subject = document.getElementById("subject").value;
+                var message = document.getElementById("message").value;
+            
+                // Validate Name
+                var namePattern = /^[a-zA-Z\s]*$/;
+                if (!namePattern.test(name)) {
+                    document.getElementById("nameError").innerText = "Please enter your name.";
+                    return false;
+                } else {
+                    document.getElementById("nameError").innerText = "";
+                }
+            
+                // Validate Email
+                var email = "example@example.com";
+                var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailPattern.test(email)) {
+                    document.getElementById("emailError").innerText = "Please enter a valid email address.";
+                    return false;
+                } else {
+                    document.getElementById("emailError").innerText = "";
+                }
+            
+                // Validate Phone Number
+                var phoneNumberPattern = /^\d{10}$/; // Assuming phone number should be exactly 10 digits
+                if (!phoneNumberPattern.test(phoneNumber)) {
+                    document.getElementById("phoneNumberError").innerText = "Please enter a valid 10-digit phone number.";
+                    return false;
+                } else {
+                    document.getElementById("phoneNumberError").innerText = "";
+                }
+            
+                // Validate Subject
+                if (subject.trim() == "") {
+                    document.getElementById("subjectError").innerText = "Please enter a subject.";
+                    return false;
+                } else {
+                    document.getElementById("subjectError").innerText = "";
+                }
+            
+                // Validate Message
+                if (message.trim() == "") {
+                    document.getElementById("messageError").innerText = "Please enter your message.";
+                    return false;
+                } else {
+                    document.getElementById("messageError").innerText = "";
+                }
+            
+                // If all validations pass, submit the form
+                alert("Message sent successfully!");
+                return true;
+            }
+            </script>            
+            </head>
+        <body>
+  </Section>
+  <section class="hotdeals-container p-3 m-2">
+        <div class="row ">
+          <div class="col-12 col-lg-4 justify-content-center">
+              <h2>Hot Deals</h2>
+          </div>
+          <div class="col-12 col-lg-6 justify-content-center">
+              <h4>Save 15% OFF on FILLERS & TULIPS</h4>
+              <h8>Shopping Hot Products on May 2024 you will save 15% OFF! </h8>
+              <p>Terms and Conditions apply.</p>
+            </div>
+          <div class="col-12 col-lg-2 justify-content-end">
+              <a
+                name="shop-now"
+                id="shop-now"
+                class="btn btn-danger"
+                href="allproducts.html"
+                role="button"
+                >Shop Now</a
+              >
+              
+            </div>
+      
+          </div>
+        </div>
+        </div>
+      </section>
+      <section class="offers-container-fluid p-3 m-2">
+        <div class="row p-2">
+          <div class="col-12 col-lg-10 px-3 py-2">
+          <h2>More Offers</h2>
+        </div>
+        <div class="col-12 col-lg-2 p-3 justify-content-end">
+      <a
+        name="allcategories"
+        id="allcategories"
+        class="btn btn-danger"
+        href="categories.html"
+        role="button"
+        >Shop Now</a
+      >
+      </div>
+        
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <img src="images/banner/1-1.jpg" alt="">
+          </div>
+          <div class="col-12 col-lg-4">
+            <img src="images/banner/1-2.jpg" alt="">
+          </div>
+          <div class="col-12 col-lg-4">
+            <img src="images/banner/1-3.jpg" alt="">
+          </div>
+        </div>
+      </section>
+      <footer class="footer-section px-3 mx-2">
+       <div class="row">
+        <div class="col-12 col-lg-3 col-md-3">
+          <div class="social-links">
+            <img src="images/logo/logo.png" class="w-50 p-2" alt="">
+            <address>Opp.Easy Buy, Complex Road, 
+              <br>Rajamahendravaram
+              <br>+919912779159
+              <br>flowerfly@gmail.com </address>
+        
+            <ul class="d-flex">
+                <li>
+                    <a class="rounded-circle" href="#" title="Facebook">
+                      <i class="bi bi-facebook"></i>            
+                    </a>
+                </li>
+                <li>
+                    <a class="rounded-circle" href="#" title="Twitter">
+                      <i class="bi bi-twitter-x"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="rounded-circle" href="#" title="Youtube">
+                      <i class="bi bi-youtube"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="rounded-circle" href="#" title="Instagram">
+                      <i class="bi bi-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col-12 col-lg-3 col-md-3">
+          <h4>Quick Links</h4>
+          <ul class="quick-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="allproducts.html">All Products</a></li>
+              <li><a href="categories.html">Categories</a></li>
+              <li><a href="about-us.html">Why We?</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-3 col-md-3">
+          <h4>Support</h4>
+          <ul class="quick-links">
+              <li><a href="contact.html">Privacy Policy</a></li>
+              <li><a href="contact.html">Shipping</a></li>
+              <li><a href="contact.html">Return Policy</a></li>
+              <li><a href="contact.html">Terms of Service</a></li>
+              <li><a href="contact.html">Online support</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-3 col-md-3">
+          <h8>Secure payment with</h8>
+          <ul class="payments">
+            <li>
+                <a class="rounded-circle" href="#" title="Visa">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(29,29,29,1)"><path d="M22.2215 15.7683L21.9974 14.6431L19.4831 14.6431L19.0837 15.7599L17.0677 15.7643C18.3633 12.6514 19.3247 10.3455 19.952 8.84657C20.1159 8.45511 20.4072 8.25543 20.8364 8.25848C21.1638 8.26094 21.6991 8.26124 22.4421 8.25942L24 15.7648L22.2215 15.7683ZM20.0485 13.1018H21.6692L21.0642 10.2819L20.0485 13.1018ZM7.06069 8.2567L9.08703 8.25933L5.95498 15.7683L3.90367 15.7675C3.21013 13.0896 2.70084 11.1042 2.37581 9.81122C2.27616 9.4148 2.07796 9.13797 1.69702 9.00705C1.35736 8.89031 0.791683 8.7098 0 8.46553V8.25942C1.48023 8.25924 2.55921 8.25924 3.23694 8.25942C3.7974 8.25959 4.12411 8.53015 4.22922 9.08566C4.33473 9.6435 4.60127 11.0616 5.02884 13.3398L7.06069 8.2567ZM11.8702 8.25934L10.2695 15.7676L8.34108 15.7648C8.37914 15.5824 8.91202 13.0797 9.93972 8.2567L11.8702 8.25934ZM15.7815 8.12012C16.3578 8.12012 17.0846 8.2992 17.5035 8.46553L17.1652 10.0221C16.7871 9.87023 16.1657 9.66491 15.6424 9.67294C14.8813 9.68462 14.4117 10.004 14.4117 10.3105C14.4117 10.808 15.2277 11.0586 16.0681 11.603C17.0265 12.2237 17.1531 12.78 17.1412 13.3856C17.1277 14.6413 16.0681 15.8801 13.8322 15.8801C12.8111 15.8648 12.4444 15.7791 11.6122 15.4839L11.9637 13.8595C12.8106 14.2142 13.1698 14.327 13.8935 14.327C14.5569 14.327 15.1263 14.0589 15.1312 13.5919C15.1347 13.2598 14.9316 13.0955 14.1871 12.6847C13.4427 12.2739 12.3994 11.706 12.4128 10.5631C12.43 9.10074 13.815 8.12012 15.7815 8.12012Z"></path></svg>      
+                </a>
+            </li>
+            <li>
+              <a class="rounded-circle" href="#" title="Master Card">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(29,29,29,1)"><path d="M12.001 6.65407C13.5816 7.89878 14.5965 9.82972 14.5965 11.9977C14.5965 14.1657 13.5816 16.0966 12.001 17.3413C10.4204 16.0966 9.40547 14.1657 9.40547 11.9977C9.40547 9.82972 10.4204 7.89878 12.001 6.65407ZM11.1316 6.0717C9.46024 7.50229 8.40098 9.62742 8.40098 12C8.40098 14.371 9.45891 16.4949 11.1285 17.9255C10.1444 18.4795 9.00847 18.7955 7.79873 18.7955C4.04443 18.7955 1.00098 15.752 1.00098 11.9977C1.00098 8.24341 4.04443 5.19995 7.79873 5.19995C9.00976 5.19995 10.1468 5.51663 11.1316 6.0717ZM12.8735 17.9255C14.543 16.4949 15.601 14.371 15.601 12C15.601 9.62742 14.5417 7.50229 12.8703 6.0717C13.8551 5.51663 14.9922 5.19995 16.2032 5.19995C19.9575 5.19995 23.001 8.24341 23.001 11.9977C23.001 15.752 19.9575 18.7955 16.2032 18.7955C14.9935 18.7955 13.8576 18.4795 12.8735 17.9255Z"></path></svg>        </a>
+          </li>
+          <li>
+            <a class="rounded-circle" href="#" title="UPI">
+              <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 65 65" viewBox="0 0 65 65" id="BhimUpi"><polygon fill="#dfdfdf" stroke="#1d1d1d" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" points="38.3 5.5 23.1 60.7 51.9 32.4" class="colorfad1c4 svgShape colorStrokee54125 svgStroke"></polygon><polygon fill="#ffffff" stroke="#1d1d1d" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" points="28.1 4.1 13.1 60.9 42.2 32.8" class="colorffffff svgShape colorStrokee54125 svgStroke"></polygon></svg></a>
+          </li>
+          </ul>
+        </div>
+       </div>
+      </footer>
+      <div class="cpy_">
+        <p class="mx-auto">© 2021 All Rights Reserved By <a href="#"><img src="images/logo/logo.png" alt=""></a><br>
+        
+           Designed & Developed By <a href="" target="_blank">HarikaGogi</a>
+        
+        </p>
+      </div>
+      
+      <script src="js/jquery-3.6.0.min.js"></script>
+      <script src="js/jquery-migrate-3.3.2.min.js"></script>
+      <script src="js/main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    </body>
+</html>
+           
+  
+  
+  
+  
